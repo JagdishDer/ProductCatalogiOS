@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CB7C72DF30B579390015F301 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D730B579390015F301 /* ProductListViewModel.swift */; };
+		CB7C72E030B579390015F301 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D130B579390015F301 /* AuthModels.swift */; };
+		CB7C72E130B579390015F301 /* ProductCatalogSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72DD30B579390015F301 /* ProductCatalogSwiftApp.swift */; };
+		CB7C72E230B579390015F301 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D630B579390015F301 /* AuthViewModel.swift */; };
+		CB7C72E330B579390015F301 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72DA30B579390015F301 /* ProductDetailView.swift */; };
+		CB7C72E430B579390015F301 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D930B579390015F301 /* LoginView.swift */; };
+		CB7C72E530B579390015F301 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D230B579390015F301 /* Product.swift */; };
+		CB7C72E630B579390015F301 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72DB30B579390015F301 /* ProductListView.swift */; };
+		CB7C72E730B579390015F301 /* DummyJSONClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C72D430B579390015F301 /* DummyJSONClient.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CB7C72B530B579080015F301 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +39,18 @@
 		CB7C72A330B579070015F301 /* ProductCatalogSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductCatalogSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7C72B430B579080015F301 /* ProductCatalogSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductCatalogSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7C72BE30B579080015F301 /* ProductCatalogSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductCatalogSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7C72D130B579390015F301 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		CB7C72D230B579390015F301 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CB7C72D430B579390015F301 /* DummyJSONClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyJSONClient.swift; sourceTree = "<group>"; };
+		CB7C72D630B579390015F301 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CB7C72D730B579390015F301 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		CB7C72D930B579390015F301 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CB7C72DA30B579390015F301 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		CB7C72DB30B579390015F301 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		CB7C72DD30B579390015F301 /* ProductCatalogSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatalogSwiftApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CB7C72A530B579070015F301 /* ProductCatalogSwift */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProductCatalogSwift;
-			sourceTree = "<group>";
-		};
 		CB7C72B730B579080015F301 /* ProductCatalogSwiftTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ProductCatalogSwiftTests;
@@ -75,7 +91,7 @@
 		CB7C729A30B579070015F301 = {
 			isa = PBXGroup;
 			children = (
-				CB7C72A530B579070015F301 /* ProductCatalogSwift */,
+				CB7C72DE30B579390015F301 /* ProductCatalogSwift */,
 				CB7C72B730B579080015F301 /* ProductCatalogSwiftTests */,
 				CB7C72C130B579080015F301 /* ProductCatalogSwiftUITests */,
 				CB7C72A430B579070015F301 /* Products */,
@@ -92,6 +108,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CB7C72D330B579390015F301 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C72D130B579390015F301 /* AuthModels.swift */,
+				CB7C72D230B579390015F301 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB7C72D530B579390015F301 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C72D430B579390015F301 /* DummyJSONClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB7C72D830B579390015F301 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C72D630B579390015F301 /* AuthViewModel.swift */,
+				CB7C72D730B579390015F301 /* ProductListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB7C72DC30B579390015F301 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C72D930B579390015F301 /* LoginView.swift */,
+				CB7C72DA30B579390015F301 /* ProductDetailView.swift */,
+				CB7C72DB30B579390015F301 /* ProductListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB7C72DE30B579390015F301 /* ProductCatalogSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C72D330B579390015F301 /* Models */,
+				CB7C72D530B579390015F301 /* Networking */,
+				CB7C72D830B579390015F301 /* ViewModels */,
+				CB7C72DC30B579390015F301 /* Views */,
+				CB7C72DD30B579390015F301 /* ProductCatalogSwiftApp.swift */,
+			);
+			path = ProductCatalogSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +170,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CB7C72A530B579070015F301 /* ProductCatalogSwift */,
 			);
 			name = ProductCatalogSwift;
 			packageProductDependencies = (
@@ -236,6 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7C72DF30B579390015F301 /* ProductListViewModel.swift in Sources */,
+				CB7C72E030B579390015F301 /* AuthModels.swift in Sources */,
+				CB7C72E130B579390015F301 /* ProductCatalogSwiftApp.swift in Sources */,
+				CB7C72E230B579390015F301 /* AuthViewModel.swift in Sources */,
+				CB7C72E330B579390015F301 /* ProductDetailView.swift in Sources */,
+				CB7C72E430B579390015F301 /* LoginView.swift in Sources */,
+				CB7C72E530B579390015F301 /* Product.swift in Sources */,
+				CB7C72E630B579390015F301 /* ProductListView.swift in Sources */,
+				CB7C72E730B579390015F301 /* DummyJSONClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +458,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ProductCatalogSwift/ProductCatalogSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProductCatalogSwift/Preview Content\"";
@@ -404,7 +473,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
@@ -425,7 +494,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ProductCatalogSwift/ProductCatalogSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProductCatalogSwift/Preview Content\"";
@@ -441,7 +509,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;

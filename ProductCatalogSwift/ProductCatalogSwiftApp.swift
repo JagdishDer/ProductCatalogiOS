@@ -1,17 +1,21 @@
-//
-//  ProductCatalogSwiftApp.swift
-//  ProductCatalogSwift
-//
-//  Created by Jagdish Der on 24/11/26.
-//
-
 import SwiftUI
 
 @main
 struct ProductCatalogSwiftApp: App {
+    @StateObject private var auth = AuthViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if let token = auth.accessToken {
+                    ProductListView(
+                        token: token,
+                        onLogout: { auth.logout() }
+                    )
+                } else {
+                    LoginView(viewModel: auth)
+                }
+            }
         }
     }
 }
